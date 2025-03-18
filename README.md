@@ -2,7 +2,7 @@
 
 ![RedStrike](https://github.com/user-attachments/assets/fb43de97-4ce7-4b57-a452-b2f9347b99af)
 
-**RedStrike** é um jogo beat 'em up que está em desenvolvimento como avaliação da disciplina de desenvolvimento de Games Universidade da Amazônia.
+**RedStrike** é um jogo beat 'em up que está em desenvolvimento como avaliação da disciplina de desenvolvimento de Games da Universidade da Amazônia.
 
 ---
 
