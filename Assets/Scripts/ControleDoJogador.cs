@@ -15,9 +15,9 @@ public class ControleDoJogador : MonoBehaviour
     private Vector2 direcaoDoMovimento;
 
     [Header("Controle do Ataque")]
-    [SerializeField]private float tempoMaximoEntreAtaques;
-    private float tempoAtualEntreAtaques;
-    private bool podeAtacar;
+    [SerializeField]private float tempoMaximoEntreAtaques; // tempo de espera entre ataques
+    private float tempoAtualEntreAtaques; // tempo passado do ultimo ataque
+    private bool podeAtacar; // pode ou não atacar
 
     private void Start()
     {
