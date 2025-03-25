@@ -53,7 +53,7 @@ public class ControleDoJogador : MonoBehaviour
         //Testar dano do Jogador
         if(Input.GetKeyDown(KeyCode.L))
         {
-            GetComponent<VidaDoJogador>().LevarDano(1);
+            RodarAnimacaoDeDano();
         }
     }
 
@@ -99,5 +99,11 @@ public class ControleDoJogador : MonoBehaviour
         //Movimenta o Jogador com base na sua direção
         direcaoDoMovimento = inputDeMovimento.normalized;
         oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoJogador;
+    }
+
+    public void RodarAnimacaoDeDano()
+    {
+        oAnimator.SetTrigger("levando-dano");
+        Debug.Log("Jogador levou dano");
     }
 }

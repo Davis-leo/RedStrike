@@ -11,14 +11,15 @@ public class ControleDoInimigo : MonoBehaviour
 
     [Header("Movimento do Inimigo")]
     [SerializeField] private float velocidadeDoInimigo;
+    [SerializeField] private float distanciaMinima; // Adicione esta linha - distância mínima para não colar no jogador
     private Vector2 direcaoDoMovimento;
 
     [Header("Controle do Ataque")]
-    [SerializeField]private float tempoMaximoEntreAtaques;
+    [SerializeField] private float tempoMaximoEntreAtaques;
     private float tempoAtualEntreAtaques;
     private bool podeAtacar;
-    [SerializeField]private float distanciaParaAtacar;
-    [SerializeField]private int quantidadeDeAtaquesDoInimigo;
+    [SerializeField] private float distanciaParaAtacar;
+    [SerializeField] private int quantidadeDeAtaquesDoInimigo;
     private int ataqueAtualDoInimigo;
 
     private void Start()
@@ -26,6 +27,9 @@ public class ControleDoInimigo : MonoBehaviour
         oRigidbody2D = GetComponent<Rigidbody2D>();
         oAnimator = GetComponent<Animator>();
         oJogador = Object.FindAnyObjectByType<ControleDoJogador>().gameObject;
+        
+        // Inicializa a distância mínima se não foi configurada
+        if(distanciaMinima <= 0) distanciaMinima = 0.5f;
     }
 
     private void Update()
@@ -37,7 +41,6 @@ public class ControleDoInimigo : MonoBehaviour
 
     private void RodarCronometroDosAtaques()
     {
-        //Limita a quantidade de ataques consecutivos que o Inimigo pode realizar
         tempoAtualEntreAtaques -= Time.deltaTime;
         if(tempoAtualEntreAtaques <= 0)
         {
@@ -48,50 +51,53 @@ public class ControleDoInimigo : MonoBehaviour
 
     private void EspelharInimigo()
     {
-        //Faz o inimigo olhar na direção do Jogador(Esquerda / Direita)
         if (oJogador.transform.position.x > transform.position.x)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
         else if(oJogador.transform.position.x < transform.position.x)
         {
-            transform.localScale = new Vector3(1f , 1f, 1f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
-    
     }   
 
     private void SeguirJogador()
-    {   //Armazena a posição do Jogador e se movimenta a ele
-        if(Vector2.Distance(transform.position, oJogador.transform.position) > distanciaParaAtacar)
+    {
+        float distanciaAtual = Vector2.Distance(transform.position, oJogador.transform.position);
+        
+        // Se estiver longe, segue normalmente
+        if(distanciaAtual > distanciaParaAtacar)
         {
-        direcaoDoMovimento = (oJogador.transform.position - transform.position).normalized;
-        oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo;
-
-        oAnimator.SetTrigger("andando");
+            direcaoDoMovimento = (oJogador.transform.position - transform.position).normalized;
+            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo;
+            oAnimator.SetTrigger("andando");
         }
-        // Deixa de se movimentar e ataca o Jogador
+        // Se estiver muito perto, afasta um pouco mantendo a distância mínima
+        else if(distanciaAtual < distanciaMinima)
+        {
+            direcaoDoMovimento = (transform.position - oJogador.transform.position).normalized;
+            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo;
+            oAnimator.SetTrigger("andando");
+        }
+        // Se estiver na distância correta para atacar, para e ataca
         else
         {
             oRigidbody2D.linearVelocity = Vector2.zero;
-
             oAnimator.SetTrigger("parado");
-
             SortearAtaque();
         }
     }
 
     private void SortearAtaque()
     {
-        //Sorteia um dos ataques disponiveis e inicia o ataque
         ataqueAtualDoInimigo = Random.Range(0, quantidadeDeAtaquesDoInimigo);
 
         if(podeAtacar)
-            IniciarAtaque(); //C# permite para uma unica condição if
+            IniciarAtaque();
     }
 
     private void IniciarAtaque()
     {
-        //Muda para o ataque sorteado
         if(ataqueAtualDoInimigo == 0)
         {
             oAnimator.SetTrigger("socando-fraco");

@@ -534,6 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676175889}
   - component: {fileID: 676175890}
+  - component: {fileID: 676175891}
   m_Layer: 0
   m_Name: ColisorDoChute
   m_TagString: Untagged
@@ -602,6 +603,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &676175891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676175888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 2
 --- !u!1 &836091568
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819985884}
   - component: {fileID: 1819985885}
+  - component: {fileID: 1819985886}
   m_Layer: 0
   m_Name: ColisorDoSoco
   m_TagString: Untagged
@@ -946,6 +961,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1819985886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819985883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 1
 --- !u!1 &1870659716
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +986,7 @@ GameObject:
   - component: {fileID: 1870659718}
   - component: {fileID: 1870659717}
   - component: {fileID: 1870659720}
+  - component: {fileID: 1870659722}
   - component: {fileID: 1870659721}
   m_Layer: 0
   m_Name: Inimigo-Bill
@@ -1060,6 +1089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 2
+  distanciaMinima: 1
   tempoMaximoEntreAtaques: 2
   distanciaParaAtacar: 1.2
   quantidadeDeAtaquesDoInimigo: 2
@@ -1085,6 +1115,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1870659722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870659716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f39ffe30bf2b408b08177203c81cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoVivo: 0
+  vidaMaxima: 4
 --- !u!1 &1903771808
 GameObject:
   m_ObjectHideFlags: 0
