@@ -109,4 +109,9 @@ public class ControleDoInimigo : MonoBehaviour
 
         podeAtacar = false;
     }
+
+    public void RodarAnimacaoDeDano()
+    {
+        oAnimator.SetTrigger("levando-dano");
+    }
 }
