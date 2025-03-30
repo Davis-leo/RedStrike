@@ -10,6 +10,7 @@ public class VidaDoInimigo : MonoBehaviour
     [Header("Controle da Vida")]
     [SerializeField]private int vidaMaxima;
     private int vidaAtual;
+    [SerializeField]private float tempoParaSumir;
 
     private void Start()
     {
@@ -27,8 +28,10 @@ public class VidaDoInimigo : MonoBehaviour
             GetComponent<ControleDoInimigo>().RodarAnimacaoDeDano();
             
             if(vidaAtual <= 0)
-            {
-                Destroy(this.gameObject);
+            {   
+                inimigoVivo = false;
+                GetComponent<ControleDoInimigo>().RodarAnimacaoDeDerrota();
+                Destroy(this.gameObject, tempoParaSumir);
             }
         }
     }
