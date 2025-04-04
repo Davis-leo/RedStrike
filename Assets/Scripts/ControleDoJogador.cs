@@ -34,18 +34,26 @@ public class ControleDoJogador : MonoBehaviour
 
     private void Update()
     {
-        RodarCronometroDosAtaques();
+        if(GetComponent<VidaDoJogador>().jogadorVivo){
+
+            RodarCronometroDosAtaques();
         
-        if(!levouDano)
-        {
-            ReceberInputs();
-            RodarAnimacoesEAtaques();
-            EspelharJogador();
-            MovimentarJogador();
+            if(!levouDano)
+            {
+                ReceberInputs();
+                RodarAnimacoesEAtaques();
+                EspelharJogador();
+                MovimentarJogador();
+            }
+            else
+            {
+                RodarCronometroDoDano();
+            }
+
         }
         else
         {
-            RodarCronometroDoDano();
+            RodarAnimacaoDeDerrota();
         }
     }
     
@@ -136,5 +144,10 @@ public class ControleDoJogador : MonoBehaviour
         levouDano = true;
 
         oRigidbody2D.linearVelocity = Vector2.zero;
+    }
+
+    public void RodarAnimacaoDeDerrota()
+    {
+        oAnimator.Play("jogador-derrotado");
     }
 }

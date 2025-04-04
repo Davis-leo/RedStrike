@@ -16,6 +16,8 @@ public class VidaDoJogador : MonoBehaviour
         //Configura a vida do Jogador
         jogadorVivo = true;
         vidaAtual = vidaMaxima;
+
+        UIManager.instance.AtualizarBarraDeVidaDoJogador(vidaMaxima, vidaAtual);
     }
 
     public void GanharVida(int vidaParaGanhar)
@@ -31,6 +33,8 @@ public class VidaDoJogador : MonoBehaviour
         {
             vidaAtual = vidaMaxima;
         }
+
+        UIManager.instance.AtualizarBarraDeVidaDoJogador(vidaMaxima, vidaAtual);
     }
 
     public void LevarDano(int danoParaReceber)
@@ -42,10 +46,12 @@ public class VidaDoJogador : MonoBehaviour
 
             GetComponent<ControleDoJogador>().RodarAnimacaoDeDano();
 
+            UIManager.instance.AtualizarBarraDeVidaDoJogador(vidaMaxima, vidaAtual);
+
             if(vidaAtual <= 0)
             {
                 jogadorVivo = false;
-                Debug.Log("Game Over");
+                GetComponent<ControleDoJogador>().RodarAnimacaoDeDerrota();
             }
         }
     }
