@@ -29,11 +29,7 @@ public class AreaDeLuta : MonoBehaviour
 
     private void Update()
     {
-        if(podeSpawnar && inimigosSpawnados < InimigosParaSpawnar.Length)
-        {
-            tempoAtualEntreSpawns = tempoMaximoEntreSpawns;
-            podeSpawnar = false;
-        }
+        if (podeSpawnar && inimigosSpawnados < InimigosParaSpawnar.Length)
         {
             RodarCronometroDoSpawn();
         }
@@ -62,7 +58,7 @@ public class AreaDeLuta : MonoBehaviour
         }
     }
 
-    private void OTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(podeVerificarJogador)
         {

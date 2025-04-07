@@ -9,6 +9,7 @@ public class Comidas : MonoBehaviour
         if(other.gameObject.GetComponent<VidaDoJogador>() != null)
         {
             other.gameObject.GetComponent<VidaDoJogador>().GanharVida(vidaParaDar);
+            SoundManager.instance.pegarComida.Play();
             Destroy(this.gameObject);
         }
     }
