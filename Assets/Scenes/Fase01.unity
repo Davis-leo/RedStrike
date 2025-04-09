@@ -2140,8 +2140,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3157344046258144901, guid: 521b3c40f79f3af4bbe2303d56fe9eae, type: 3}
-      propertyPath: velocidadeDoInimigo
-      value: 0
+      propertyPath: tempoMaximoEntreAtaques
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157344046258144901, guid: 521b3c40f79f3af4bbe2303d56fe9eae, type: 3}
+      propertyPath: quantidadeDeAtaquesDoInimigo
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5039978974072037508, guid: 521b3c40f79f3af4bbe2303d56fe9eae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15844,25 +15848,6 @@ Transform:
   - {fileID: 1860926872}
   m_Father: {fileID: 1244915084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1857948933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3282876127559865224, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
-  m_PrefabInstance: {fileID: 1242791968141673135}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1857948940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857948933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2b1a7b07fe9b048a3dca9f4495fc4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 2
-  distanciaParaAtacar: 2
 --- !u!1 &1860926871
 GameObject:
   m_ObjectHideFlags: 0
@@ -16001,12 +15986,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2159383003612209718, guid: b66ec6f612f6ba34b961009b22b66ccc, type: 3}
-      propertyPath: velocidadeDoInimigo
-      value: 0
+      propertyPath: tempoMaximoEntreAtaques
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159383003612209718, guid: b66ec6f612f6ba34b961009b22b66ccc, type: 3}
+      propertyPath: quantidadeDeAtaquesDoInimigo
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5364282459052908393, guid: b66ec6f612f6ba34b961009b22b66ccc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.38
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 5364282459052908393, guid: b66ec6f612f6ba34b961009b22b66ccc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16352,11 +16341,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 804186786956310202, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.78
+      value: 7.31
       objectReference: {fileID: 0}
     - target: {fileID: 804186786956310202, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.03
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 804186786956310202, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16393,6 +16382,14 @@ PrefabInstance:
     - target: {fileID: 808317774479594449, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
       propertyPath: m_Name
       value: Boss2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217602296662360374, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
+      propertyPath: velocidadeDoInimigo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217602296662360374, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
+      propertyPath: tempoMaximoEntreAtaques
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16475,17 +16472,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1981561252256394610, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -181828907702267046, guid: 65886fcc0d0a35c41afa62b41e6c1dbd, type: 3}
     - target: {fileID: 3282876127559865224, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 3353174727174940393, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
+      propertyPath: velocidadeDoInimigo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353174727174940393, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
+      propertyPath: tempoMaximoEntreAtaques
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353174727174940393, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
+      propertyPath: quantidadeDeAtaquesDoInimigo
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4305814833939996778, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.76
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 4305814833939996778, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.86
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 4305814833939996778, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16519,14 +16532,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6172323594318968129, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3282876127559865224, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1857948940}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c22ff2ea240cf54b8327e6731c9afab, type: 3}
 --- !u!1001 &7201828337909725730
 PrefabInstance:
@@ -16536,9 +16545,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 946290714402076105, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1167482261331597733, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
       propertyPath: m_Name
       value: BossPunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532617449576518836, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1715913590947073731, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16581,9 +16598,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1863993111286449999, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
-      propertyPath: velocidadeDoInimigo
-      value: 0
+      propertyPath: tempoMaximoEntreAtaques
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1863993111286449999, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
+      propertyPath: quantidadeDeAtaquesDoInimigo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671350420316951518, guid: 69a4971dae939e5429f08cedcc6963cf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6474817916930609645, guid: b86d3f173f27e2c4fa4acde00535f67e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

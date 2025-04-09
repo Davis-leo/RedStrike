@@ -13,7 +13,12 @@ public class ControleDoInimigo2 : MonoBehaviour
 
     private Vector2 direcaoDoMovimento;
 
+    [SerializeField]private float tempoMaximoEntreAtaques;
+    private float tempoAtualEntreAtaques;
+    private bool podeAtacar;
     [SerializeField]private float distanciaParaAtacar;
+    [SerializeField]private int quantidadeDeAtaquesDoInimigo;
+    private int ataqueAtualDoInimigo;
 
     private void Start()
     {
@@ -24,8 +29,20 @@ public class ControleDoInimigo2 : MonoBehaviour
 
     private void Update()
     {
+        RodarCronometroDosAtaques();
         EspelharInimigo();
         SeguirJogador();
+    }
+
+    private void RodarCronometroDosAtaques()
+    {
+        tempoAtualEntreAtaques -= Time.deltaTime;
+        if(tempoAtualEntreAtaques <= 0)
+        {
+            podeAtacar = true;
+            tempoAtualEntreAtaques = tempoMaximoEntreAtaques;
+        }
+        
     }
 
     private void EspelharInimigo()
@@ -52,7 +69,33 @@ public class ControleDoInimigo2 : MonoBehaviour
         {
             oRigidbody2D.linearVelocity = Vector2.zero;
             oAnimator.SetTrigger("parado");
+
+            SortearAtaque();
         }
+    }
+
+    private void SortearAtaque()
+    {
+        ataqueAtualDoInimigo = Random.Range(0, quantidadeDeAtaquesDoInimigo);
+        
+        if(podeAtacar)
+        {
+            IniciarAtaque();
+        }
+    }
+
+    private void IniciarAtaque()
+    {
+        if(ataqueAtualDoInimigo == 0)
+        {
+            oAnimator.SetTrigger("socando-fraco");
+        }
+        else if(ataqueAtualDoInimigo ==1)
+        {
+            oAnimator.SetTrigger("socando-forte");
+        }
+
+        podeAtacar = false;
     }
 
 }
