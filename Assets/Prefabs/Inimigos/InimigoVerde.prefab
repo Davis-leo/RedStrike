@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5714875831560907808}
   - component: {fileID: 2600039338784096079}
+  - component: {fileID: 4505148975778706825}
   m_Layer: 0
   m_Name: ColisorDoSocoForte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5714875831560907808
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3173203304966668855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 1.91, z: 0}
+  m_LocalPosition: {x: -1.41, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3173203304966668855}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,6 +79,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4505148975778706825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3173203304966668855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 4
 --- !u!1 &4133373111305730200
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,13 +102,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2068141564960185194}
   - component: {fileID: 6929895467595859987}
+  - component: {fileID: 3329361371804589971}
   m_Layer: 0
   m_Name: ColisorDoSocoFraco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2068141564960185194
 Transform:
   m_ObjectHideFlags: 0
@@ -104,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 4133373111305730200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 1.91, z: 0}
+  m_LocalPosition: {x: -1.41, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +132,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4133373111305730200}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -156,6 +171,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3329361371804589971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133373111305730200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 2
 --- !u!1 &5091660963763564442
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,8 +241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5792401623959436927}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7990028, y: 1.3514074, z: 0.028281132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -286,8 +314,9 @@ GameObject:
   - component: {fileID: 5364282459052908393}
   - component: {fileID: 3554286798199403068}
   - component: {fileID: 3472069558912113637}
-  - component: {fileID: 2159383003612209718}
   - component: {fileID: 7643113616721649026}
+  - component: {fileID: 1322046855724968811}
+  - component: {fileID: 4295749032538391380}
   m_Layer: 0
   m_Name: InimigoVerde
   m_TagString: Untagged
@@ -346,7 +375,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.83372694, y: 1.2857472}
+  m_Offset: {x: 0.016165018, y: -0.08622122}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -356,7 +385,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.823682, y: 3.2098782}
+  m_Size: {x: 2.0179431, y: 3.5255523}
   m_EdgeRadius: 0
 --- !u!50 &3472069558912113637
 Rigidbody2D:
@@ -385,20 +414,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2159383003612209718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6217560215897274098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2b1a7b07fe9b048a3dca9f4495fc4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 0
-  distanciaParaAtacar: 2
 --- !u!95 &7643113616721649026
 Animator:
   serializedVersion: 7
@@ -421,6 +436,44 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1322046855724968811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6217560215897274098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ad799024cb9a245a0c30bf5e0f20a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoInimigo: 0
+  distanciaMinima: 2
+  tempoMaximoEntreAtaques: 2
+  distanciaParaAtacar: 2
+  quantidadeDeAtaquesDoInimigo: 2
+--- !u!114 &4295749032538391380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6217560215897274098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f39ffe30bf2b408b08177203c81cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoVivo: 0
+  nomeDoInimigo: 
+  vidaMaxima: 4
+  tempoParaSumir: 2
+  chanceDeDroparComida: 30
+  comidasParaDropar:
+  - {fileID: 7701338776776169274, guid: 488b7b73595250347adbce142bddfc2f, type: 3}
+  - {fileID: 6996345011532978874, guid: f120cb09607d07940913278fdaeaa8fb, type: 3}
+  - {fileID: 8961514679014557800, guid: b6264fba279fc0c448fff7f3e08f2204, type: 3}
 --- !u!1 &8649031801823889928
 GameObject:
   m_ObjectHideFlags: 0

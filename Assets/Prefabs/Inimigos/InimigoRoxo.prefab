@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3468311171557534256}
   - component: {fileID: 4685052075574940626}
+  - component: {fileID: 7143706756168595842}
   m_Layer: 0
   m_Name: ColisorDoSocoForte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3468311171557534256
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1487388925703751623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: 0.6, z: 0}
+  m_LocalPosition: {x: -1.36, y: 0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487388925703751623}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,6 +79,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7143706756168595842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487388925703751623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 4
 --- !u!1 &3023164789501255820
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,13 +167,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1877780984966195945}
   - component: {fileID: 8504259456114492546}
+  - component: {fileID: 11085735243391440}
   m_Layer: 0
   m_Name: ColisorDoSocoFraco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1877780984966195945
 Transform:
   m_ObjectHideFlags: 0
@@ -169,7 +184,7 @@ Transform:
   m_GameObject: {fileID: 7483278359932553970}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: 0.6, z: 0}
+  m_LocalPosition: {x: -1.36, y: 0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -182,7 +197,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7483278359932553970}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -221,6 +236,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &11085735243391440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483278359932553970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 2
 --- !u!1 &8758696227093980813
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,8 +260,9 @@ GameObject:
   - component: {fileID: 5039978974072037508}
   - component: {fileID: 1838385466369955236}
   - component: {fileID: 2472759962453885595}
-  - component: {fileID: 3157344046258144901}
   - component: {fileID: 3171305889581492582}
+  - component: {fileID: 3345854495643032375}
+  - component: {fileID: 4603891348908632855}
   m_Layer: 0
   m_Name: InimigoRoxo
   m_TagString: Untagged
@@ -331,20 +360,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7968626, y: 3.1496086}
   m_EdgeRadius: 0
---- !u!114 &3157344046258144901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8758696227093980813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2b1a7b07fe9b048a3dca9f4495fc4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 0
-  distanciaParaAtacar: 2
 --- !u!95 &3171305889581492582
 Animator:
   serializedVersion: 7
@@ -367,6 +382,44 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3345854495643032375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758696227093980813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ad799024cb9a245a0c30bf5e0f20a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoInimigo: 0
+  distanciaMinima: 2
+  tempoMaximoEntreAtaques: 2
+  distanciaParaAtacar: 2
+  quantidadeDeAtaquesDoInimigo: 2
+--- !u!114 &4603891348908632855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758696227093980813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f39ffe30bf2b408b08177203c81cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoVivo: 0
+  nomeDoInimigo: 
+  vidaMaxima: 4
+  tempoParaSumir: 2
+  chanceDeDroparComida: 50
+  comidasParaDropar:
+  - {fileID: 7701338776776169274, guid: 488b7b73595250347adbce142bddfc2f, type: 3}
+  - {fileID: 6996345011532978874, guid: f120cb09607d07940913278fdaeaa8fb, type: 3}
+  - {fileID: 8961514679014557800, guid: b6264fba279fc0c448fff7f3e08f2204, type: 3}
 --- !u!1 &9154024342925011782
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: boss-socando-forte
+  m_Name: boss-derrotado
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,15 +23,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -40,7 +31,79 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5833333
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.1666666
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.3333334
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6666666
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.8333334
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.1666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -51,9 +114,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: ColisoresDeAtaque/ColisorDoSocoForte
-    classID: 1
+    attribute: m_Enabled
+    path: Visual/SpriteDoBoss
+    classID: 212
     script: {fileID: 0}
     flags: 0
   - serializedVersion: 2
@@ -69,29 +132,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5833333
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: ColisoresDeAtaque/ColisorDoSocoForte
+    path: 
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -99,19 +144,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 4154597524244139601, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - time: 0.083333336
-      value: {fileID: 7941266307629393456, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+      value: {fileID: 1324592268616771537, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
     - time: 0.16666667
-      value: {fileID: -8547098657454557272, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - time: 0.25
-      value: {fileID: 2082913236461738995, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+      value: {fileID: -1033013684159133044, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
     - time: 0.33333334
-      value: {fileID: 3558781916178829872, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+      value: {fileID: 1387271073235013010, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
     - time: 0.5
-      value: {fileID: 3558781916178829872, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - time: 0.5833333
-      value: {fileID: 3863515047972365573, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+      value: {fileID: 2743186813669621832, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
+    - time: 0.6666667
+      value: {fileID: -4060151416582447097, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
     attribute: m_Sprite
     path: Visual/SpriteDoBoss
     classID: 212
@@ -125,16 +166,16 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3965693399
-      attribute: 2086281974
+      path: 732486231
+      attribute: 3305885265
       script: {fileID: 0}
-      typeID: 1
+      typeID: 212
       customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3965693399
+      path: 0
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 61
@@ -152,19 +193,17 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 4154597524244139601, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: 7941266307629393456, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: -8547098657454557272, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: 2082913236461738995, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: 3558781916178829872, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: 3558781916178829872, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
-    - {fileID: 3863515047972365573, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+    - {fileID: 1324592268616771537, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
+    - {fileID: -1033013684159133044, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
+    - {fileID: 1387271073235013010, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
+    - {fileID: 2743186813669621832, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
+    - {fileID: -4060151416582447097, guid: 5819842f1b2ad2d4d9d1b6c969f835ba, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.59999996
+    m_StopTime: 2.1666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -186,15 +225,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -203,7 +233,79 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5833333
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.1666666
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.3333334
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6666666
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.8333334
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.1666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -214,9 +316,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: ColisoresDeAtaque/ColisorDoSocoForte
-    classID: 1
+    attribute: m_Enabled
+    path: Visual/SpriteDoBoss
+    classID: 212
     script: {fileID: 0}
     flags: 0
   - serializedVersion: 2
@@ -232,29 +334,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5833333
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: ColisoresDeAtaque/ColisorDoSocoForte
+    path: 
     classID: 61
     script: {fileID: 0}
     flags: 0

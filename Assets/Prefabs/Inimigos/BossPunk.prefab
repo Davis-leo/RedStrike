@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1715913590947073731}
   - component: {fileID: 9184116346416010643}
-  - component: {fileID: 1863993111286449999}
   - component: {fileID: 389535452849513948}
   - component: {fileID: 6804024466763521993}
+  - component: {fileID: 3277255269630552217}
+  - component: {fileID: 3464492302713551405}
   m_Layer: 0
   m_Name: BossPunk
   m_TagString: Untagged
@@ -59,20 +60,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1863993111286449999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167482261331597733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2b1a7b07fe9b048a3dca9f4495fc4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 0
-  distanciaParaAtacar: 2
 --- !u!50 &389535452849513948
 Rigidbody2D:
   serializedVersion: 5
@@ -146,6 +133,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7666389, y: 3.3957465}
   m_EdgeRadius: 0
+--- !u!114 &3277255269630552217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167482261331597733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f39ffe30bf2b408b08177203c81cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoVivo: 0
+  nomeDoInimigo: Vega
+  vidaMaxima: 12
+  tempoParaSumir: 2
+  chanceDeDroparComida: 0
+  comidasParaDropar: []
+--- !u!114 &3464492302713551405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167482261331597733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ad799024cb9a245a0c30bf5e0f20a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoInimigo: 6
+  distanciaMinima: 1.5
+  tempoMaximoEntreAtaques: 0.2
+  distanciaParaAtacar: 1.5
+  quantidadeDeAtaquesDoInimigo: 3
 --- !u!1 &1791159417914752838
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,13 +178,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1912567775950905043}
   - component: {fileID: 946290714402076105}
+  - component: {fileID: 7049897389259605383}
   m_Layer: 0
   m_Name: ColisorDoSocoForte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1912567775950905043
 Transform:
   m_ObjectHideFlags: 0
@@ -172,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 1791159417914752838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 0, z: 0}
+  m_LocalPosition: {x: -0.95, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,7 +208,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791159417914752838}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -208,11 +231,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.06429064, y: 0.1392964}
+  m_Offset: {x: 0.2271008, y: 0.1392964}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -222,8 +245,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.600045, y: 1.921499}
+  m_Size: {x: 1.745741, y: 1.921499}
   m_EdgeRadius: 0
+--- !u!114 &7049897389259605383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791159417914752838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 10
 --- !u!1 &2717553049649552525
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +369,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1619877142, guid: 7c922648f60b8bb469670b7e1376ab8a, type: 3}
+  m_Sprite: {fileID: 6474817916930609645, guid: b86d3f173f27e2c4fa4acde00535f67e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -386,13 +422,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4034571964648170183}
   - component: {fileID: 1532617449576518836}
+  - component: {fileID: 8011752913064981525}
   m_Layer: 0
   m_Name: ColisorDoSocoFraco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4034571964648170183
 Transform:
   m_ObjectHideFlags: 0
@@ -402,7 +439,7 @@ Transform:
   m_GameObject: {fileID: 6824593308881513563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 0, z: 0}
+  m_LocalPosition: {x: -0.95, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -415,7 +452,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6824593308881513563}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -438,11 +475,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.06429064, y: 0.13929641}
+  m_Offset: {x: 0.22710085, y: 0.13929641}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -452,5 +489,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6000454, y: 1.9214993}
+  m_Size: {x: 1.7457414, y: 1.9214993}
   m_EdgeRadius: 0
+--- !u!114 &8011752913064981525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824593308881513563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 8

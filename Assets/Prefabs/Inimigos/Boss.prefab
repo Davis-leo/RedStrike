@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7543543936836099891}
   - component: {fileID: 1100264013657069432}
   - component: {fileID: 1521649459147504329}
-  - component: {fileID: 3353174727174940393}
+  - component: {fileID: 959242427005272977}
+  - component: {fileID: 3178536431927229921}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -132,7 +133,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3353174727174940393
+--- !u!114 &959242427005272977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,11 +142,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 3282876127559865224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2b1a7b07fe9b048a3dca9f4495fc4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 33ad799024cb9a245a0c30bf5e0f20a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 2
+  velocidadeDoInimigo: 4
+  distanciaMinima: 2
+  tempoMaximoEntreAtaques: 0.8
   distanciaParaAtacar: 2
+  quantidadeDeAtaquesDoInimigo: 2
+--- !u!114 &3178536431927229921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282876127559865224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f39ffe30bf2b408b08177203c81cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoVivo: 0
+  nomeDoInimigo: Duke
+  vidaMaxima: 8
+  tempoParaSumir: 2
+  chanceDeDroparComida: 0
+  comidasParaDropar: []
 --- !u!1 &3305537903089282943
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +244,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3558781916178829872, guid: 31fb0157af4e6a24aa6013714233011b, type: 3}
+  m_Sprite: {fileID: -181828907702267046, guid: 65886fcc0d0a35c41afa62b41e6c1dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -275,6 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961786221475326454}
   - component: {fileID: 4868158774461695663}
+  - component: {fileID: 8451341838363130397}
   m_Layer: 0
   m_Name: ColisorDoSocoForte
   m_TagString: Untagged
@@ -304,7 +327,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4294770060357807628}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -343,6 +366,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.197746, y: 1.112997}
   m_EdgeRadius: 0
+--- !u!114 &8451341838363130397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294770060357807628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 8
 --- !u!1 &5479228552253251766
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,13 +422,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2159433626514523551}
   - component: {fileID: 7805021936018618541}
+  - component: {fileID: 7990552629167242377}
   m_Layer: 0
   m_Name: ColisorDoSocoFraco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2159433626514523551
 Transform:
   m_ObjectHideFlags: 0
@@ -415,7 +452,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6426824038493954025}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -454,3 +491,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1977456, y: 1.1129973}
   m_EdgeRadius: 0
+--- !u!114 &7990552629167242377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426824038493954025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593d476400ae1b489809fe67e2b34a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoDoGolpe: 6

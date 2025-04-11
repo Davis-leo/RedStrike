@@ -10,16 +10,16 @@ public class ControleDoInimigo : MonoBehaviour
     private GameObject oJogador;
 
     [Header("Movimento do Inimigo")]
-    [SerializeField] private float velocidadeDoInimigo;
+    [SerializeField]private float velocidadeDoInimigo;
     [SerializeField] private float distanciaMinima; // Adicione esta linha - distância mínima para não colar no jogador
     private Vector2 direcaoDoMovimento;
 
     [Header("Controle do Ataque")]
-    [SerializeField] private float tempoMaximoEntreAtaques;
+    [SerializeField]private float tempoMaximoEntreAtaques;
     private float tempoAtualEntreAtaques;
     private bool podeAtacar;
-    [SerializeField] private float distanciaParaAtacar;
-    [SerializeField] private int quantidadeDeAtaquesDoInimigo;
+    [SerializeField]private float distanciaParaAtacar;
+    [SerializeField]private int quantidadeDeAtaquesDoInimigo;
     private int ataqueAtualDoInimigo;
 
     private void Start()
@@ -27,9 +27,6 @@ public class ControleDoInimigo : MonoBehaviour
         oRigidbody2D = GetComponent<Rigidbody2D>();
         oAnimator = GetComponent<Animator>();
         oJogador = Object.FindAnyObjectByType<ControleDoJogador>().gameObject;
-        
-        // Inicializa a distância mínima se não foi configurada
-        if(distanciaMinima <= 0) distanciaMinima = 0.5f;
     }
 
     private void Update()
@@ -70,27 +67,17 @@ public class ControleDoInimigo : MonoBehaviour
 
     private void SeguirJogador()
     {
-        float distanciaAtual = Vector2.Distance(transform.position, oJogador.transform.position);
-        
-        // Se estiver longe, segue normalmente
-        if(distanciaAtual > distanciaParaAtacar)
+        if(Vector2.Distance(transform.position, oJogador.transform.position) > distanciaParaAtacar)
         {
             direcaoDoMovimento = (oJogador.transform.position - transform.position).normalized;
-            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo;
+            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo; 
             oAnimator.SetTrigger("andando");
         }
-        // Se estiver muito perto, afasta um pouco mantendo a distância mínima
-        else if(distanciaAtual < distanciaMinima)
-        {
-            direcaoDoMovimento = (transform.position - oJogador.transform.position).normalized;
-            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoInimigo;
-            oAnimator.SetTrigger("andando");
-        }
-        // Se estiver na distância correta para atacar, para e ataca
         else
         {
             oRigidbody2D.linearVelocity = Vector2.zero;
             oAnimator.SetTrigger("parado");
+
             SortearAtaque();
         }
     }
@@ -125,6 +112,11 @@ public class ControleDoInimigo : MonoBehaviour
     public void RodarAnimacaoDeDerrota()
     {
         oAnimator.Play("inimigo-derrotado");
+        oAnimator.Play("inimigo-verde-derrotado");
+        oAnimator.Play("inimigo-roxo-derrotado");
+        oAnimator.Play("punk-derrotado");
+        oAnimator.Play("boss-derrotado");
+        oAnimator.Play("cyborg-derrotado");
         oRigidbody2D.linearVelocity = Vector2.zero;
     }
 }
