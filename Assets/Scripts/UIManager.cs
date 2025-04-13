@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
+    [SerializeField]private Animator oAnimatorDaTransicao;
+
     [Header("Painel de Game Over")]
     [SerializeField]private GameObject painelDeGameOver;
 
@@ -27,6 +29,17 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         DesativarPainelDoInimigo();
+        ClarearImagemDeTransicao();
+    }
+
+    private void ClarearImagemDeTransicao()
+    {
+        oAnimatorDaTransicao.Play("imagem-de-trasicao-clareando"); // Errei o nome da animação mas não vou corrigir
+    }
+
+    public void EscurecerImagemDeTransicao()
+    {
+        oAnimatorDaTransicao.Play("imagem-de-trasicao-escurecendo"); /// Errei o nome da animação mas não vou corrigir
     }
 
     public void AtualizarBarraDeVidaDoJogador(int valorMaximo, int valorAtual)
