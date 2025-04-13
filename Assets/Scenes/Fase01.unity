@@ -475,9 +475,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: tempoMaximoEntreSpawns
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: pontosDeSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: InimigosParaSpawnar.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.31
+      value: 25.6
       objectReference: {fileID: 0}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.y
@@ -524,7 +552,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1566643063395376884, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
@@ -785,6 +814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMinimo: 0
   xMaximo: 62
+  velocidadeParaVoltarAoJogador: 5
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,9 +1762,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1554760721436434803, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099026119932886529, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.22
+      objectReference: {fileID: 0}
     - target: {fileID: 6121667453627287023, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 6121667453627287023, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1772,8 +1810,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6692265129939974204, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: tempoMaximoEntreSpawns
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: pontosDeSpawn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+      propertyPath: InimigosParaSpawnar.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3498789116066194607, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+    - {fileID: 3964988825556506942, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
@@ -2297,9 +2353,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: tempoMaximoEntreSpawns
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.02
+      value: 47.5
       objectReference: {fileID: 0}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2344,6 +2412,10 @@ PrefabInstance:
     - target: {fileID: 9161744035131575803, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204243831830402663, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.96
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

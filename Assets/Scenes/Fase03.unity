@@ -793,6 +793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMinimo: 0
   xMaximo: 62
+  velocidadeParaVoltarAoJogador: 5
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
