@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.z
@@ -593,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161744035131575803, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1632,10 +1632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AreaDeLuta03
       objectReference: {fileID: 0}
-    - target: {fileID: 1691821123060991295, guid: 7405500b3ecb73343a12f4cba0e35f5b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1934240012484530212, guid: 7405500b3ecb73343a12f4cba0e35f5b, type: 3}
+      propertyPath: 'InimigosParaSpawnar.Array.data[0]'
+      value: 
+      objectReference: {fileID: 808317774479594449, guid: f41fbe2eaf8d75c4a9bc581a004ed4db, type: 3}
     - target: {fileID: 4515382415994771916, guid: 7405500b3ecb73343a12f4cba0e35f5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.79
@@ -1824,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1224736691115365586, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6121667453627287023, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1922,7 +1922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2599,7 +2599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161744035131575803, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17029,7 +17029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 7555917748893073439, guid: a5efdf26327bdaf47bd80b3dae017111, type: 3}
       propertyPath: m_LocalPosition.z
