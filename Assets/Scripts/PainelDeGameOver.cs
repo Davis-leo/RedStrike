@@ -31,7 +31,9 @@ public class PainelDeGameOver : MonoBehaviour
 
     private void ReiniciarPartida()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Fase01");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SoundManager.instance.TocarMusicaDeFundo();
     }
 
     private void VoltarAoMenu()

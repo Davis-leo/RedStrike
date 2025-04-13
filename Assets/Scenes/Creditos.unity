@@ -415,8 +415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 24.894, y: -132.67}
-  m_SizeDelta: {x: 890.716, y: 143.89}
+  m_AnchoredPosition: {x: 26, y: -132.67}
+  m_SizeDelta: {x: 1188.124, y: 143.89}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &662480993
 MonoBehaviour:
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RedStrike
+  m_text: Obrigado por jogar!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ead1b8a590db7de1d930ac3913daee34, type: 2}
   m_sharedMaterial: {fileID: -6291962829807676157, guid: ead1b8a590db7de1d930ac3913daee34, type: 2}
@@ -1001,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 78}
-  m_SizeDelta: {x: 375.913, y: 82.07}
+  m_AnchoredPosition: {x: 45, y: 97}
+  m_SizeDelta: {x: 771.386, y: 82.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237069983
 MonoBehaviour:
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JOGAR
+  m_text: JOGAR DENOVO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ead1b8a590db7de1d930ac3913daee34, type: 2}
   m_sharedMaterial: {fileID: -6291962829807676157, guid: ead1b8a590db7de1d930ac3913daee34, type: 2}
