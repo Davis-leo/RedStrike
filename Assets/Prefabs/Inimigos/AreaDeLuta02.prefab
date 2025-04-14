@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1566643063395376884
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9204243831830402663}
-  m_Layer: 0
-  m_Name: Ponto (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9204243831830402663
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566643063395376884}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.56, y: -2.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7082139447844548921}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2554644355614759063
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2554644355614759063}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.81, y: -5.76, z: 0}
+  m_LocalPosition: {x: 14.55, y: -1.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 6972310871673989155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.91, y: -0.76, z: 0}
+  m_LocalPosition: {x: 16.1, y: -5.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,7 +93,6 @@ Transform:
   m_Children:
   - {fileID: 4265367905510705188}
   - {fileID: 4013661813227199133}
-  - {fileID: 9204243831830402663}
   m_Father: {fileID: 5575463732423746885}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9161744035131575803
@@ -219,12 +187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec6b8715a9441f48845ce6c9df87add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoMaximoEntreSpawns: 2.2
+  tempoMaximoEntreSpawns: 3.5
   pontosDeSpawn:
   - {fileID: 4265367905510705188}
   - {fileID: 4013661813227199133}
-  - {fileID: 9204243831830402663}
   InimigosParaSpawnar:
   - {fileID: 6217560215897274098, guid: b66ec6f612f6ba34b961009b22b66ccc, type: 3}
   - {fileID: 8758696227093980813, guid: 521b3c40f79f3af4bbe2303d56fe9eae, type: 3}
-  - {fileID: 5707828226254816805, guid: 27fcc81d74f8d4d4aadb41dad3c2ad9f, type: 3}

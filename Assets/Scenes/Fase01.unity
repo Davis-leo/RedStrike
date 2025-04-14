@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 92147023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.55, y: -2.39, z: 0}
+  m_LocalPosition: {x: -5.94, y: -1.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoJogador: 5
-  xMinimo: -7.84
-  xMaximo: 69.71
+  xMinimoOriginal: -7.84
+  xMaximoOriginal: 69.71
   yMinimo: -3.37
   yMaximo: -0.13
   tempoMaximoEntreAtaques: 0.6
@@ -391,6 +391,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1ce7fe74166eed40a162cc78fbc3e39, type: 3}
+--- !u!1 &373004893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373004894}
+  m_Layer: 0
+  m_Name: Ponto (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373004894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373004893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.1, y: -5.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1501110252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437621850
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,34 +506,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: tempoMaximoEntreSpawns
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: pontosDeSpawn.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: InimigosParaSpawnar.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.6
@@ -547,13 +550,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: AreaDeLuta02
       objectReference: {fileID: 0}
-    - target: {fileID: 9161744035131575803, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1566643063395376884, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
@@ -1697,10 +1695,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AreaDeLuta03
       objectReference: {fileID: 0}
-    - target: {fileID: 1691821123060991295, guid: 7405500b3ecb73343a12f4cba0e35f5b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4515382415994771916, guid: 7405500b3ecb73343a12f4cba0e35f5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.79
@@ -1758,18 +1752,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AreaDeLuta01
       objectReference: {fileID: 0}
-    - target: {fileID: 1224736691115365586, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554760721436434803, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 5099026119932886529, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.22
-      objectReference: {fileID: 0}
     - target: {fileID: 6121667453627287023, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.23
@@ -1810,26 +1792,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6692265129939974204, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.33
-      objectReference: {fileID: 0}
     - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: tempoMaximoEntreSpawns
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: pontosDeSpawn.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8839157404051928404, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-      propertyPath: InimigosParaSpawnar.Array.size
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: 'InimigosParaSpawnar.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6456626506870931031, guid: 806a214a92b91e744ad2181a25b4adc8, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3498789116066194607, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
-    - {fileID: 3964988825556506942, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45be9c0639a5a644bd2889d8da692d4, type: 3}
@@ -2353,18 +2321,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013661813227199133, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265367905510705188, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.55
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: pontosDeSpawn.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: tempoMaximoEntreSpawns
-      value: 3.5
+      propertyPath: 'pontosDeSpawn.Array.data[2]'
+      value: 
+      objectReference: {fileID: 373004894}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: InimigosParaSpawnar.Array.size
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4965667689177110369, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      propertyPath: 'InimigosParaSpawnar.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5337965954900389204, guid: 07e8acc9d8f952241bf1e57eb3917e49, type: 3}
     - target: {fileID: 5575463732423746885, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.5
@@ -2409,19 +2381,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: AreaDeLuta02 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 9161744035131575803, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204243831830402663, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.96
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7082139447844548921, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 373004894}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+--- !u!4 &1501110252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7082139447844548921, guid: 0d47f7acfb996954a99505568ab78694, type: 3}
+  m_PrefabInstance: {fileID: 1501110251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595294432
 GameObject:
   m_ObjectHideFlags: 0
