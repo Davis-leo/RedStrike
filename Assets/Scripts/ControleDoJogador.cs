@@ -27,6 +27,7 @@ public class ControleDoJogador : MonoBehaviour
     [SerializeField]private float tempoMaximoEntreAtaques; // tempo de espera entre ataques
     private float tempoAtualEntreAtaques; // tempo passado do ultimo ataque
     private bool podeAtacar; // pode ou não atacar
+    private bool estaAtacando;
 
     [Header("Controle do Dano")]
     [SerializeField]private float tempoMaximoDoDano;
@@ -38,6 +39,8 @@ public class ControleDoJogador : MonoBehaviour
         oRigidbody2D = GetComponent<Rigidbody2D>();
         oAnimator = GetComponent<Animator>();
 
+        podeAtacar = true;
+        estaAtacando = false;
         tempoAtualDoDano = tempoMaximoDoDano;
 
         xMinimoAtual = xMinimoOriginal;
@@ -48,8 +51,11 @@ public class ControleDoJogador : MonoBehaviour
     {
         if(GetComponent<VidaDoJogador>().jogadorVivo){
 
-            RodarCronometroDosAtaques();
-        
+            if(estaAtacando)
+            {
+                RodarCronometroDosAtaques();
+            }
+
             if(!levouDano)
             {
                 ReceberInputs();
@@ -76,6 +82,7 @@ public class ControleDoJogador : MonoBehaviour
         if(tempoAtualEntreAtaques <= 0)
         {
             podeAtacar = true;
+            estaAtacando = false;
             tempoAtualEntreAtaques = tempoMaximoEntreAtaques;
         }
     }
@@ -120,6 +127,7 @@ public class ControleDoJogador : MonoBehaviour
         {
             oAnimator.SetTrigger("socando");
             podeAtacar = false;
+            estaAtacando = true;
             SoundManager.instance.impactoSoco.Play();
         }
         
@@ -127,6 +135,7 @@ public class ControleDoJogador : MonoBehaviour
         {
             oAnimator.SetTrigger("chutando");
             podeAtacar = false;
+            estaAtacando = true;
             SoundManager.instance.impactoChute.Play();
         }
     }
@@ -147,7 +156,7 @@ public class ControleDoJogador : MonoBehaviour
     public void AtualizarLimiteXQuandoCameraTravada()
     {
         xMinimoAtual = transform.position.x - 8.0f;
-        xMaximoAtual = transform.position.x + 8.25f;
+        xMaximoAtual = transform.position.x + 8.0f;
     }
 
     public void AtualizarLimiteXQuandoCameraDestravada()
@@ -159,12 +168,19 @@ public class ControleDoJogador : MonoBehaviour
 
     private void MovimentarJogador()
     {
-        //Movimenta o Jogador com base na sua direção
-        direcaoDoMovimento = inputDeMovimento.normalized;
-        oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoJogador;
+        if(!estaAtacando)
+        {
+            //Movimenta o Jogador com base na sua direção
+            direcaoDoMovimento = inputDeMovimento.normalized;
+            oRigidbody2D.linearVelocity = direcaoDoMovimento * velocidadeDoJogador;
 
-        oRigidbody2D.position = new Vector2(Mathf.Clamp(oRigidbody2D.position.x, xMinimoAtual, xMaximoAtual), oRigidbody2D.position.y);
-        oRigidbody2D.position = new Vector2(oRigidbody2D.position.x, Mathf.Clamp(oRigidbody2D.position.y, yMinimo, yMaximo));
+            oRigidbody2D.position = new Vector2(Mathf.Clamp(oRigidbody2D.position.x, xMinimoAtual, xMaximoAtual), oRigidbody2D.position.y);
+            oRigidbody2D.position = new Vector2(oRigidbody2D.position.x, Mathf.Clamp(oRigidbody2D.position.y, yMinimo, yMaximo));
+        }
+        else
+        {
+            oRigidbody2D.linearVelocity = Vector2.zero;
+        }    
     }
 
     public void RodarAnimacaoDeDano()

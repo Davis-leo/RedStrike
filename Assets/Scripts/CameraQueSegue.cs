@@ -33,14 +33,6 @@ public class CameraQueSegue : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            TravarCamera();
-        }else if(Input.GetKeyDown(KeyCode.V))
-        {
-            DestravarCamera();
-        }
-
         GetPosicaoDoJogador();
 
         if(podeSeguirJogador)

@@ -211,4 +211,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e01269ab2afb4c8becf148294728d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaParaDar: 5
+  vidaParaDar: 10
