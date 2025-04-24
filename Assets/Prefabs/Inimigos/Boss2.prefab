@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 8071265080239799822}
   - component: {fileID: 6731818424341777662}
   - component: {fileID: 1660387770754284088}
+  - component: {fileID: 3284358859913006079}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Untagged
@@ -200,6 +201,18 @@ MonoBehaviour:
   tempoParaSumir: 2
   chanceDeDroparComida: 0
   comidasParaDropar: []
+--- !u!114 &3284358859913006079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808317774479594449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6852f5ea4e4df13099298854bae6e07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302643208373351154
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: -8019239915147560276, guid: 71bc2d249f91c9f4fa9c6d357275f266, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
